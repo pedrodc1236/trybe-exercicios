@@ -1,0 +1,38 @@
+h1 {
+    font-size:65px;
+    color: orange ;
+    font-family: sans-serif;
+}
+
+#list {
+    background-color: blueviolet;
+    font-style: italic;
+    line-height: 25px ;
+    text-align: center;
+    text-decoration: underline
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#red {
+    background-color: red;
+}
+
+#brown {
+    background-color: brown;
+}
+
+.p-ul {
+    background-color: aquamarine;
+}
+
+p {
+  font-weight: 600;
+  font-size: 3em;
+}
+
+body {
+  font-size: 16px;
+}
