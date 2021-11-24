@@ -1,31 +1,60 @@
-div:hover {
-  border: 3px solid black;
+.background {
+  background-color: yellow;
 }
 
-div:nth-last-of-type(1) {
-  color: rgb(224, 205, 233);
-  font-style: italic;
+.par {
+  color: green;
 }
 
-div:nth-last-of-type(2) {
-  color: rgb(39, 17, 59);
+.impar {
+  text-transform: uppercase;
 }
 
-div:nth-last-of-type(3) {
-  color: rgb(124, 74, 170);
-  font-size: larger;
-  font-style: italic;
+.font-red {
+  color: red
 }
 
-div:nth-last-of-type(4) {
-  color: rgb(173, 93, 248);
+h1.font-red em {
+  size: 40px;
+  border: 1px solid black;
 }
 
-div:nth-last-of-type(5) {
-  color: blueviolet;
-  font-style: italic;
+li {
+  font-size: 20px;
 }
 
-h3 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+li em {
+  font-weight: bold;
+}
+
+.font-blue {
+  color: blue;
+}
+
+.java {
+  background-color: pink;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+#StackOverflow {
+  color: orange;
+}
+
+#W3Schools{
+  color: greenyellow;
+}
+
+#MDN {
+  color: black;
+}
+
+#DevDocs {
+  color: yellow;
+}
+
+#Trybe {
+  color: green;
 }
