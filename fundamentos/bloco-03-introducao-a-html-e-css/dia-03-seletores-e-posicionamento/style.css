@@ -1,0 +1,60 @@
+.background {
+  background-color: yellow;
+}
+
+.par {
+  color: green;
+}
+
+.impar {
+  text-transform: uppercase;
+}
+
+.font-red {
+  color: red
+}
+
+h1.font-red em {
+  size: 40px;
+  border: 1px solid black;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+.font-blue {
+  color: blue;
+}
+
+.java {
+  background-color: pink;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+#StackOverflow {
+  color: orange;
+}
+
+#W3Schools{
+  color: greenyellow;
+}
+
+#MDN {
+  color: black;
+}
+
+#DevDocs {
+  color: yellow;
+}
+
+#Trybe {
+  color: green;
+}
