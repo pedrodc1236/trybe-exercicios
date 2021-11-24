@@ -1,0 +1,55 @@
+h1 {
+  text-align: center;
+}
+
+.first {
+  background-color: rgb(235, 200, 84);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+   
+}
+
+.second {
+  background-color: rgb(219, 219, 219);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+  display: inline;
+  padding: 0px 65px 30px 65px;
+  margin-left: 30%;
+ }
+
+.third {
+  background-color: rgb(170, 142, 106);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+  display: inline;
+  padding: 0px 65px 30px 65px;
+}
+
+.not-ul {
+  list-style: none;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.inline {
+  text-align: center;
+  display: inline;
+  margin-left: 200px;
+}
+
+.inline2 {
+  text-align: center;
+  display: inline;
+  position: relative;
+}
