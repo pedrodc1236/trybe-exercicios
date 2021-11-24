@@ -1,15 +1,31 @@
-h1, p {
-  text-align: center;
+div:hover {
+  border: 3px solid black;
 }
 
-a:hover {
-  background-color: rgb(188, 117, 255);
+div:nth-last-of-type(1) {
+  color: rgb(224, 205, 233);
+  font-style: italic;
 }
 
-a:focus {
-   font-size:larger;
+div:nth-last-of-type(2) {
+  color: rgb(39, 17, 59);
 }
 
-li {
-  list-style: none;
+div:nth-last-of-type(3) {
+  color: rgb(124, 74, 170);
+  font-size: larger;
+  font-style: italic;
+}
+
+div:nth-last-of-type(4) {
+  color: rgb(173, 93, 248);
+}
+
+div:nth-last-of-type(5) {
+  color: blueviolet;
+  font-style: italic;
+}
+
+h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
