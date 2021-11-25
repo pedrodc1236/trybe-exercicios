@@ -8,8 +8,7 @@ h1 {
   height: 50px;
   text-align: center;
   width: 200px;
-  margin: 0 auto;
-   
+  margin-left: 30%;
 }
 
 .second {
@@ -17,39 +16,31 @@ h1 {
   font-size: 20px;
   height: 50px;
   text-align: center;
-  width: 300px;
-  display: inline;
-  padding: 0px 65px 30px 65px;
-  margin-left: 30%;
- }
+  width: 160px;
+  display: inline-flex;
+  padding-left: 50px;
+  margin-left: 50px;
+}
 
 .third {
   background-color: rgb(170, 142, 106);
   font-size: 20px;
   height: 50px;
   text-align: center;
-  width: 300px;
-  display: inline;
-  padding: 0px 65px 30px 65px;
+  width: 160px;
+  display: inline-flex;
+  padding-left: 50px;  
 }
 
-.not-ul {
+ul {
   list-style: none;
 }
 
-h3 {
+.center {
   text-align: center;
-  margin-top: 40px;
+  
 }
 
-.inline {
-  text-align: center;
+.center li {
   display: inline;
-  margin-left: 200px;
-}
-
-.inline2 {
-  text-align: center;
-  display: inline;
-  position: relative;
 }
