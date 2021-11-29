@@ -1,0 +1,30 @@
+.fotos {
+  height: 200px;
+}
+
+body {
+  text-align: center;
+  background-color: #f2f0f9;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1 {
+  border: 20px;
+  background-color: #d9d3ee; 
+  border-radius: 25%;
+}
+
+.seçoes {
+  border: 15px;
+  background-color: #d9d3ee;
+  border-radius: 25%;
+}
+
+footer {
+  border: 30px;
+  background-color: #9989d1;
+  border-radius: 30%;
+}
