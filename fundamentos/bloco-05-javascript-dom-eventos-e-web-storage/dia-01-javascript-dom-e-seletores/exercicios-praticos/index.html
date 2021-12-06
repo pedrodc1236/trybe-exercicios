@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+        */
+          /*
+        1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+        */
+
+    function changeText () {
+      let varChangeText = document.getElementsByTagName("p")[1].innerText = "Me vejo totalmente diferente do que sou hoje. Tanto na área profissional quanto pessoal. Me vejo trabalhando na área de desenvolvimento web e podendo ajudar a minha família e seguir uma carreira da qual tanto quero. Me vejo uma pessoa melhor, com um emocional mais estabilizado, e também me vejo almejando novas metas e sempre procurando melhorar !"        
+    }
+    changeText()
+
+    /*
+    2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)). 
+    */ 
+
+    function changeColor () {
+        let contentColor = document.getElementsByClassName("main-content")[0];
+        contentColor.style.background = "rgb(76,164,109)";
+    }
+    changeColor()
+
+    /*
+    3. Crie uma função que mude a cor do quadrado vermelho para branco.
+    */
+
+    function changeColorSquare () {
+      let colorSquare = document.getElementsByClassName("center-content")[0];
+      colorSquare.style.background = "white";
+    }
+    changeColorSquare()   
+
+    /*
+    4. Crie uma função que corrija o texto da tag <h1>.
+    */  
+    
+    function changeTextTag () {
+      let changeTag = document.getElementsByTagName("h1")[0];
+      changeTag.innerHTML = "Exercício 5.1 - JavaScript"
+    }
+    changeTextTag()
+     
+    /*
+    5.Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+    */
+    
+    function changeTextUpperCase () {
+      let changeLowerCase = document.getElementsByTagName('p')[0];
+      changeLowerCase.innerHTML = changeLowerCase.innerHTML.toUpperCase();
+    }
+    changeTextUpperCase() 
+
+    /*
+    6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+    */
+
+    function changeAllTagsP () {
+      let allTagsP = document.getElementsByTagName('p');
+
+      for(let index = 0; index < allTagsP.length; index += 1) {
+        console.log(allTagsP[index].innerHTML);
+      }
+    }
+    changeAllTagsP();   
+    
+    </script>
+  </body>
+</html>
