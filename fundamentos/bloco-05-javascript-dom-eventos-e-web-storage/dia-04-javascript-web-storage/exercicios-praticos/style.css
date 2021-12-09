@@ -2,4 +2,13 @@
         text-align: center;
     }
 
+    button {
+        border: solid 2px;
+        border-radius: 20px 20px 20px 20px;
+        margin: 1em;
+        padding: 10px;
+        font-size: 10px;
+        background-color: #E8FCC2
+    }
+
     
