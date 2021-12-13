@@ -223,4 +223,39 @@ function clickDay() {
 
 clickDay();
 
-console.log();
+/* Bônus:
+Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
+Se nenhum caractere for inserido no campo input , a função deve retornar um alert com uma mensagem de erro ao clicar em "ADICIONAR".
+Ao pressionar a tecla "enter" o evento também deverá ser disparado.
+Dica - Propriedade: key . */
+
+function addAppointments () {
+  let captureAppointment = document.querySelector("#task-input");
+  let captureButtonAppointment = document.querySelector("#btn-add");
+  let captureListAdd = document.querySelector(".task-list");
+
+  captureButtonAppointment.addEventListener('click', function(){
+      if (captureAppointment.value.length > 0) {
+        let newAppointment = document.createElement('li');
+        newAppointment.innerText = captureAppointment.value;
+        
+        captureListAdd.appendChild(newAppointment);
+        captureAppointment.value = '';
+      } else {
+        alert("Para adicionar um compromisso é necessário que o digite no campo específico!")
+      } 
+  }) 
+
+    captureAppointment.addEventListener('keyup', function(e){
+      if(e.key === 'Enter' && captureAppointment.value.length > 0) {
+        let newAppointment = document.createElement('li');
+        newAppointment.innerText = captureAppointment.value;
+
+        captureListAdd.appendChild(newAppointment); 
+      } 
+    })
+}
+
+addAppointments();
+
+
