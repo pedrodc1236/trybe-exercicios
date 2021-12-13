@@ -1,8 +1,3 @@
-
-* {
-    margin: 0;
-  }
-  
   body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #eee;
@@ -119,7 +114,7 @@
   }
   
   .task-list {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   
   .task-list-container {
