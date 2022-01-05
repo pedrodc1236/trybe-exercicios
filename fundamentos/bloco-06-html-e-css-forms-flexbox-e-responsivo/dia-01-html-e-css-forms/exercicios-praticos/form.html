@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Exercicio Pratico</h1>
+    </header>
+    <main>
+        <form action="" method="get">
+            <fieldset>
+                <div>
+                    <label for="input-text">Nome:
+                    <input type="text" id="input-text" name="name" maxlength="40" required >
+                    </label><br><br>
+                </div>
+                <div>
+                    <label for="input-email">Email:
+                        <input type="text" id="input-email" name="email"
+                        maxlength="50" required>
+                    </label><br><br>
+                </div> 
+                <div>
+                    <label for="input-cpf">CPF:
+                        <input type="text" name="cpf" id="input-cpf" maxlength="11"
+                        required>
+                    </label><br><br>
+                </div>        
+                <div>
+                    <label for="input-endereco">Endereço:
+                        <input type="text" name="endereco" id="input-endereco" maxlength="200" required>
+                    </label><br><br>
+                </div>
+                <div>
+                    <label for="input-cidade">Cidade:
+                        <input type="text" name="cidade" id="input-cidade" maxlength="28" required>
+                    </label><br><br>
+                </div> 
+                <div>
+                    <label for="select-estados">Estado:
+                        <select name="estados" id="select-estados" required>
+                            <option disabled selected 
+                            value="selecione">Selecione seu Estado</option>
+                        </select>
+                    </label><br><br>
+                </div>  
+                <div>
+                    <label for="tipoImovel">Tipo de Imóvel:
+                    <input type="radio" name="tipoImovel" id="house" value="house" required>
+                    <span>Casa</span>
+                    <input type="radio" name="tipoImovel" id="apartment" value="apartment" 
+                    required>
+                    <span>Apartamento</span>
+                    </label>
+                </div>               
+        </fieldset><br>
+        <fieldset>
+            <div>
+                <label for="resume">Resumo do currículo:</label><br>
+                <textarea style="resize: none;" name="resume" id="resume" cols="50" rows="15" required maxlength="1000"></textarea>
+            </div>
+            <div>
+                <label for="input-cargo">Cargo:
+                    <input type="text" name="cargo" id="input-cargo" maxlength="40" required>
+                </label>
+            </div>
+            <div>
+                <label for="input-descricao">Descrição de Cargo:
+                    <input type="text" name="descricao" id="input-descricao" maxlength="500" required>
+                </label>
+            </div>
+            <div>
+                <label for="input-data">Data de início:
+                    <input type="text" name="dataInicio" id="input-data">
+                </label>
+            </div>          
+         </fieldset>
+    </form>
+</main>
+
+
+
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
