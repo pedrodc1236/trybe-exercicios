@@ -12,3 +12,103 @@ function createStates () {
 }
 
 createStates()
+
+//Formato da data de início
+let captureDate = document.querySelector("#input-data")
+
+function startDate () {
+   
+    let dateValue = captureDate.value;
+    let day = dateValue[0] + dateValue[1];
+    let month = dateValue[2] + dateValue[3];
+    let year = dateValue[4] + dateValue[5] + dateValue[6] + dateValue[7];
+
+     if(day < 0 || day > 31) {
+        alert('Invalid day')
+        } else if (month < 1 || month > 12) {
+            alert('Invalid month') 
+        } else if (year < 0) {
+            alert('Invalid year') 
+        } else {
+            let concatenation = day + "/" + month + "/" + year;
+            captureDate.value = concatenation;     
+        }
+}
+
+captureDate.addEventListener("keyup", function(event){
+    if (event.key === "Enter") {
+        startDate()   
+    }    
+})
+
+//Botão gerar o resultado do formúlario
+const captureButton = document.querySelector("#btn");
+const formResume = document.querySelector("#form-resume")
+
+function createTitle (){
+    let h1Text = 'Fórmulario Pessoal'
+    let createText = document.createElement('h1')
+    createText.innerText = h1Text
+    formResume.appendChild(createText);
+}
+
+function createName (){
+    let captureName = document.getElementById("input-text").value
+    let create1 = document.createElement('p')
+    create1.innerText = 'Nome: ' + captureName
+    formResume.appendChild(create1)    
+}
+
+function createEmail (){
+    let captureEmail = document.getElementById("input-email").value
+    let create2 = document.createElement('p')
+    create2.innerText = 'Email: ' + captureEmail
+    formResume.appendChild(create2)
+}
+
+function createCpf (){
+    let captureCPF = document.getElementById("input-cpf").value
+    let create3 = document.createElement('p')
+    create3.innerText = 'CPF: ' + captureCPF
+    formResume.appendChild(create3)
+}
+
+function createEndereco (){
+    let captureEndereco = document.getElementById('input-endereco').value
+    let create4 = document.createElement('p')
+    create4.innerText = "Endereço: " + captureEndereco
+    formResume.appendChild(create4)
+}
+
+function createCity (){
+    let captureCity = document.getElementById("input-cidade").value
+    let create5 = document.createElement('p')
+    create5.innerText = "Cidade: " + captureCity
+    formResume.appendChild(create5)
+}
+
+function createEstado (){
+    let captureEstado = document.getElementById("select-estados").value
+    let create6 = document.createElement('p')
+    create6.innerText = "Estado: " + captureEstado
+    formResume.appendChild(create6)
+}
+
+function houseOption (){
+    let captureHouse = document.querySelector("input[name='tipoImovel']:checked").value;
+    let create7 = document.createElement('p')
+    create7.innerText = "Tipo de ímovel: " + captureHouse
+    formResume.appendChild(create7)
+}
+
+captureButton.addEventListener("click", function(event){
+    event.preventDefault()
+    createTitle()
+    createName()
+    createEmail()
+    createCpf()
+    createEndereco()
+    createCity()
+    createEstado()
+    houseOption()
+})
