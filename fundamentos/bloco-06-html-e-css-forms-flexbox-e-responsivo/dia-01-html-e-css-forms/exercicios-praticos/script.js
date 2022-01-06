@@ -10,7 +10,6 @@ function createStates () {
         captureSelect.appendChild(options)
     }
 }
-
 createStates()
 
 //Formato da data de início
@@ -42,6 +41,7 @@ captureDate.addEventListener("keyup", function(event){
 })
 
 //Botão gerar o resultado do formúlario
+
 const captureButton = document.querySelector("#btn");
 const formResume = document.querySelector("#form-resume")
 
@@ -55,7 +55,7 @@ function createTitle (){
 function createName (){
     let captureName = document.getElementById("input-text").value
     let create1 = document.createElement('p')
-    create1.innerText = 'Nome: ' + captureName
+    create1.innerHTML = "Nome: " + captureName
     formResume.appendChild(create1)    
 }
 
@@ -101,8 +101,37 @@ function houseOption (){
     formResume.appendChild(create7)
 }
 
+function createResume (){
+    let captureResume = document.getElementById("resume").value
+    let create8 = document.createElement('p')
+    create8.innerText = "Resumo do currículo: " + captureResume
+    formResume.appendChild(create8)
+}
+
+function createCargo (){
+    let captureCargo = document.getElementById("input-cargo").value
+    let create9 = document.createElement('p')
+    create9.innerText = "Cargo: " + captureCargo
+    formResume.appendChild(create9)
+}
+
+function createDescription (){
+    let captureDescription = document.getElementById("input-descricao").value
+    let create10 = document.createElement('p')
+    create10.innerText = "Descrição de Cargo: " + captureDescription
+    formResume.appendChild(create10)
+}
+
+function createDate (){
+    let captureDate = document.getElementById("input-data").value
+    let create11 = document.createElement("p")
+    create11.innerText = "Data de ínicio: " + captureDate
+    formResume.appendChild(create11)
+}
+
 captureButton.addEventListener("click", function(event){
     event.preventDefault()
+    startDate() 
     createTitle()
     createName()
     createEmail()
@@ -111,4 +140,25 @@ captureButton.addEventListener("click", function(event){
     createCity()
     createEstado()
     houseOption()
+    createResume()
+    createCargo()
+    createDescription()
+    createDate()
 })
+
+//Botão Limpar
+const captureBtnLimpar = document.getElementById("btnLimpar")
+
+function btnLimpar (){
+    let allP = document.querySelectorAll("p")
+    for(let index = 0; index < allP.length; index += 1) {
+        formResume.removeChild(allP[index])
+    }
+
+    const captureH1 = document.querySelector("h1")
+    formResume.removeChild(captureH1)
+}
+
+captureBtnLimpar.addEventListener("click", btnLimpar())
+
+
