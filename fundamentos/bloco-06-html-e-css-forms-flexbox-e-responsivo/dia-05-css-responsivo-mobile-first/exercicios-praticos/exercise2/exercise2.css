@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media screen and (max-width: 400px) {
+      body {
+          background-color: #fff8dd;
+          margin: 2.0%;
+      }
+
+      header {
+          background-color: #2b2410;
+          color: #fff8dd;
+          font-size: larger; 
+          text-align: center; 
+          font-size: 25px;       
+      }
+
+      .ul-header {
+          display: flex;
+          justify-content: space-around;
+      }
+
+      li {
+          list-style: none;
+          font-size: large;
+      }
+
+      .aside-one {
+         display: flex;
+      }
+
+      .chapters {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        justify-content: center;
+      }
+    
+      .information {
+          display: flex;
+          justify-content: center;
+      }
+
+      article p {
+          font-size: larger;
+      }
+
+      article h1 {
+          margin-top: 50px;
+          font-size: x-large;
+      }
+
+      footer h3 {
+          font-size: 25px;
+      }
+
+      footer p {
+          font-size: large;
+      }
+}
