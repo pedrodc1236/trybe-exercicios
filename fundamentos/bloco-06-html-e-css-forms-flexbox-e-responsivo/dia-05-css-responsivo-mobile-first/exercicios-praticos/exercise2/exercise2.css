@@ -1,0 +1,192 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* Dispositivos de até 600px "PEQUENO*/
+  @media screen and (max-width: 600px) {
+      body {
+          background-color: #fff8dd;
+          margin: 2.0%;
+      }
+
+      header {
+          background-color: #2b2410;
+          color: #fff8dd;
+          font-size: larger; 
+          text-align: center; 
+          font-size: 25px;       
+      }
+
+      .ul-header {
+          display: flex;
+          justify-content: space-around;
+      }
+
+      li {
+          list-style: none;
+          font-size: large;
+      }
+
+      .aside-one {
+         display: flex;
+      }
+
+      .chapters {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        justify-content: center;
+      }
+    
+      .information {
+          display: flex;
+          justify-content: center;
+      }
+
+      article p {
+          font-size: larger;
+      }
+
+      article h1 {
+          margin-top: 50px;
+          font-size: x-large;
+      }
+
+      footer h3 {
+          font-size: 25px;
+      }
+
+      footer p {
+          font-size: large;
+      }
+}
+
+/* Dispositivos 601px a 800px "MEDIO"*/
+    @media screen and (min-width: 601px) and (max-width: 800px) {
+        body {
+            background-color: #fff8dd;
+            margin: 5.0%;
+        }
+
+        header {
+            background-color: #2b2410;
+            color: #fff8dd;
+            font-size: larger; 
+            text-align: center;      
+        }
+
+        header p {
+            font-size: 45px;
+        }
+
+         .ul-header {
+          display: flex;
+          justify-content: space-around;        
+        }
+
+        li {
+            list-style: none;
+            font-size: 30px;
+        }
+
+        .aside-one {
+            display: flex;
+         }
+   
+         .chapters {
+           display: flex;
+           align-items: center;
+           width: 50%;
+           justify-content: center;
+           font-size: 35px;
+         }
+       
+         .information {
+             display: flex;
+             justify-content: center;
+             font-size: 35px;
+         }
+   
+         article p {
+             font-size: 30px ;
+         }
+   
+         article h1 {
+             margin-top: 50px;
+             font-size: 40px;
+         }
+   
+         footer h3 {
+             font-size: 35px;
+         }
+   
+         footer p {
+             font-size: 25px;
+         }
+    }
+
+/* Padrão PC "GRANDE"*/
+
+    body {
+        background-color: #fff8dd;
+        margin: 5.0%;
+    }
+
+    header {
+        background-color: #2b2410;
+        color: #fff8dd;
+        font-size: larger; 
+        text-align: center;      
+    }
+
+    header p {
+        font-size: 45px;
+    }
+
+     .ul-header {
+      display: flex;
+      justify-content: space-around;        
+    }
+
+    li {
+        list-style: none;
+        font-size: 20px;
+    }
+
+     .chapters {
+       font-size: 25px;
+       display: flex;
+       justify-content: center;
+     }
+   
+     .information {
+         display: flex;
+         font-size: 25px;
+         justify-content: center;
+     }
+
+     .chapters-information {
+         display: flex;
+         justify-content:space-around;
+     }
+
+     article p {
+         font-size: 30px ;
+     }
+
+     article h1 {
+         margin-top: 50px;
+         font-size: 40px;
+     }
+
+     footer h3 {
+         font-size: 35px;
+     }
+
+     footer p {
+         font-size: 25px;
+     }
