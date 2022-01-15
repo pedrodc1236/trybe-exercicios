@@ -19,6 +19,8 @@
       const verification = (value1, value2) => {
           if (value1 == "" || value2 == "") {
               throw new Error ('É necessário informar dois números')
+          } else if (isNaN(value1) || isNaN(value2)) {
+              throw new Error ('O valor digitado não é númerico!')
           }
       }
       
@@ -29,10 +31,9 @@
       try {
           verification(value1, value2);
         document.getElementById('result').innerHTML = `Resultado: ${result}`;
-        document.getElementById('value1').value = '';
-        document.getElementById('value2').value = '';
       } catch(e) {
         document.getElementById('result').innerHTML = `Error: ${e.message}`
+      } finally {
         document.getElementById('value1').value = '';
         document.getElementById('value2').value = '';
       }
