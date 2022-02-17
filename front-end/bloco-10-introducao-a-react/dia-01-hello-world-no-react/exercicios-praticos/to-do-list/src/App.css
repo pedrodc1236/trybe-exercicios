@@ -1,0 +1,16 @@
+.to-do-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 180px;
+  font-size: 2.5em;
+}
+
+.to-do-list h1 {
+  border: 4px solid black;
+}
+
+.to-do-list ul {
+  padding: 5%;
+  border: 4px solid black;
+}
