@@ -1,0 +1,17 @@
+* {
+  margin: 0%;
+}
+
+.app {
+  text-align: center;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pokemon {
+  border: 3px solid black;
+  margin: 5%;
+}
