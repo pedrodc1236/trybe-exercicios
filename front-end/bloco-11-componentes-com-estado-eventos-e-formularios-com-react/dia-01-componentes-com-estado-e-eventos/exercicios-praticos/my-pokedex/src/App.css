@@ -1,0 +1,36 @@
+:root {
+  --yellow: rgb(255, 203, 5);
+  --light-blue: rgb(42, 117, 187);
+  --yellow-shadow: rgb(199, 160, 8);
+  --dark-blue: rgb(60, 90, 166);
+  }
+
+* {
+  margin: 0%;
+  background-color: var(--yellow);
+}
+
+.app {
+  text-align: center;
+}
+
+.pokedex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--light-blue);
+}
+
+.pokemon {
+  border: 3px solid black;
+  margin: 5%;
+  background-color: var(--yellow-shadow);
+}
+
+.poke-name {
+  font-weight: bolder;
+}
+
+.poke-name, .poke-type, .poke-average, .poke-image {
+  background-color: var(--yellow-shadow);
+}
