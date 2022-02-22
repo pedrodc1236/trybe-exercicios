@@ -7,15 +7,22 @@ class Form extends React.Component {
 
     this.state = {
       nome: '',
+      idade: 0,
+      estadoFavorito: '',
+      palavraChaveFavorita: '',
+      perguntaReact: 'false',
     };
 
     this.handleEventChange = this.handleEventChange.bind(this);
   }
   
-  handleEventChange(event){
+  handleEventChange({ target }) {
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+
     this.setState({
-      nome: event.target.value,
-    })
+      [name]: value,
+    });
   }
 
   render() {
@@ -27,11 +34,16 @@ class Form extends React.Component {
           <input type="text" name="nome" value={this.state.nome} onChange={this.handleEventChange} />
           </label>
           <label> Idade:
-          <input type="number" name="idade" />
+          <input type="number" name="idade"
+            value={this.state.idade}
+            onChange={this.handleEventChange} />
           </label>
 
           <label>
-            <select name="palavraChaveFavorita">
+            <select name="palavraChaveFavorita"
+              value={this.state.palavraChaveFavorita}
+              onChange={this.handleEventChange}
+            >
               <option value="estado">Estado</option>
               <option value="evento">Evento</option>
               <option value="props">Props</option>
@@ -41,8 +53,19 @@ class Form extends React.Component {
 
           <label>
             Fale sobre seu estado Favorito, seja de React ou seja do Brasil:
-            <textarea name="estadoFavorito" />
+            <textarea name="estadoFavorito" 
+              value={this.state.estadoFavorito}
+              onChange={this.handleEventChange} />
           </label>
+
+          <label>
+            Gosta de React?
+            <input type="checkbox"
+             name="perguntaReact"
+             value={this.state.perguntaReact}
+             onChange={this.handleEventChange} />
+          </label>
+
         </form>
       </div>
     );
