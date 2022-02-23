@@ -1,24 +1,26 @@
 import React from "react";
+import Checkbox from "./Checkbox";
 import "./Form.css";
+import InfoPessoais from "./InfoPessoais";
 
 class Form extends React.Component {
-  constructor(){
+  constructor() {
     super();
 
     this.state = {
-      nome: '',
+      nome: "",
       idade: 0,
-      estadoFavorito: '',
-      palavraChaveFavorita: '',
-      perguntaReact: 'false',
+      estadoFavorito: "",
+      palavraChaveFavorita: "",
+      perguntaReact: "false",
     };
 
     this.handleEventChange = this.handleEventChange.bind(this);
   }
-  
+
   handleEventChange({ target }) {
     const { name } = target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const value = target.type === "checkbox" ? target.checked : target.value;
 
     this.setState({
       [name]: value,
@@ -30,42 +32,33 @@ class Form extends React.Component {
       <div>
         <h1>Formúlario</h1>
         <form>
-          <label>Nome: 
-          <input type="text" name="nome" value={this.state.nome} onChange={this.handleEventChange} />
-          </label>
-          <label> Idade:
-          <input type="number" name="idade"
-            value={this.state.idade}
-            onChange={this.handleEventChange} />
-          </label>
+          <InfoPessoais
+            handleEventChange={this.handleEventChange}
+            nome={this.state.nome}
+            idade={this.state.idade}
+            palavraChaveFavorita={this.state.palavraChaveFavorita}
+          />
 
-          <label>
-            <select name="palavraChaveFavorita"
-              value={this.state.palavraChaveFavorita}
-              onChange={this.handleEventChange}
-            >
-              <option value="estado">Estado</option>
-              <option value="evento">Evento</option>
-              <option value="props">Props</option>
-              <option value="hooks">Hooks</option>
-            </select>
-          </label>
+          <fieldset>
+            <legend>Texto e Arquivos</legend>
 
-          <label>
-            Fale sobre seu estado Favorito, seja de React ou seja do Brasil:
-            <textarea name="estadoFavorito" 
-              value={this.state.estadoFavorito}
-              onChange={this.handleEventChange} />
-          </label>
+            <label>
+              Fale sobre seu estado Favorito, seja de React ou seja do Brasil:
+              <textarea
+                name="estadoFavorito"
+                value={this.state.estadoFavorito}
+                onChange={this.handleEventChange}
+              />
+              {!this.state.estadoFavorito.length ? " - Texto vazio - " : " -ok- "}
+            </label>
 
-          <label>
-            Gosta de React?
-            <input type="checkbox"
-             name="perguntaReact"
-             value={this.state.perguntaReact}
-             onChange={this.handleEventChange} />
-          </label>
+            <input type="file" />
+          </fieldset>
 
+          <Checkbox 
+            handleEventChange={this.handleEventChange}
+            perguntaReact={this.state.perguntaReact} 
+          />
         </form>
       </div>
     );
