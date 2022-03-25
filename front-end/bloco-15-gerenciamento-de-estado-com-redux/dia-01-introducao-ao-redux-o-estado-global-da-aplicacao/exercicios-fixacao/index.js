@@ -29,4 +29,4 @@ store.dispatch(fazerLogin("alguem@email.com"));
 
 store.subscribe(() => {
   console.log(store.getState())
-});
+})
