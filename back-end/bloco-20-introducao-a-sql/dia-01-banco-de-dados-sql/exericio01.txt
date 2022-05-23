@@ -1,0 +1,3 @@
+Exercício 1: Descubra como fazer uma pesquisa em qualquer tabela sem usar uma linha de código.
+R: Basta utilizar o botão direito do mouse na tabela que quer e clicar em "select rows-limit 200". O limite vai depender da configuração feita no workbench.
+

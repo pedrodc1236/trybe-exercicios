@@ -1,0 +1,2 @@
+Exercício 2: Descubra como é possível criar uma tabela sem usar código SQL. 
+R: Basta clicar com o botão direito do mouse e selecionar "create table".

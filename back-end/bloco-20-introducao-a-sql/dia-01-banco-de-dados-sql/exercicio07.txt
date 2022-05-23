@@ -1,0 +1,5 @@
+Exercício 7: Abra tabela por tabela do banco sakila e encontre no mínimo 3 exemplos de um relacionamentos 1:N ou N:1.
+Resposta:
+1 - Relacionamento entre andress e city N:1 (vários endereços para uma cidade) 
+2 - Relacionamento entre film e language N:1 (vários filmes para uma linguaguem)
+3 - Relacionamento entre customer e payment 1:N (um customer para muitos pagamentos)
