@@ -1,0 +1,2 @@
+Exercício 3: Feito isso, crie a seguinte tabela com as seguintes restrições: 
+R: Basta utilizar a interface gráfica do Mysql Workbench para fazer a tabela de maneira simples.

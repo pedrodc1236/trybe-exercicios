@@ -1,0 +1,2 @@
+Exercício 5: Após resolver o exercício anterior, responda: qual tipo de relacionamento a tabela city faz com a tabela country? 
+R: N:1 (Muitas cidades para 1 estado).
