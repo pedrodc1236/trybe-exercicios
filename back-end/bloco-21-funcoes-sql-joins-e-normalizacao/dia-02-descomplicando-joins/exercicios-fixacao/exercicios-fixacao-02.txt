@@ -1,0 +1,18 @@
+1. Queremos saber o Nome das pessoas colaboradoras e suas respectivas gerências (manager) cujos departamentos (department) são diferentes.
+R: USE hr;
+SELECT 
+CONCAT(employee.FIRST_NAME, ' ', employee.LAST_NAME) AS `Pessoas colaboradoras`,
+CONCAT(manager.FIRST_NAME, ' ', manager.LAST_NAME) AS `Gerentes`
+FROM employees AS employee
+INNER JOIN employees AS manager
+ON employee.MANAGER_ID = manager.EMPLOYEE_ID
+WHERE employee.department_id <> manager.department_id;
+
+2. Exiba o Nome e a quantidade de pessoas lideradas de cada pessoa gerente.
+R: USE hr;
+SELECT CONCAT(manager.FIRST_NAME, ' ', manager.LAST_NAME) AS `Nome`,
+COUNT(employee.EMPLOYEE_ID) AS `Quantidade de pessoas lideradas`
+FROM employees AS manager
+INNER JOIN employees AS employee
+ON manager.EMPLOYEE_ID = employee.MANAGER_ID
+GROUP BY `Nome`;
