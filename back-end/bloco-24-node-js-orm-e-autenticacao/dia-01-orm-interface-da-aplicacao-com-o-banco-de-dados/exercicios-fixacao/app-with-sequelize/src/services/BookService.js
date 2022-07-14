@@ -28,7 +28,6 @@ const update = async (id, newBook) => {
 
 const remove = async (id) => {
   const removeBook = await Book.destroy({ where: { id } })
-  console.log(removeBook);
 
   return removeBook;
 }
