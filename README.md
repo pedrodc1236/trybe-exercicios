@@ -1,1 +1,1 @@
-Estudante de desenvolvimento web na Trybe!
+Estudante de desenvolvimento web full-stack na Trybe!
