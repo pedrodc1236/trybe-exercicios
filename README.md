@@ -1,11 +1,8 @@
 # Trybe
 
-This repository contains all the learning activities developed by _[Débora Serra](www.linkedin.com/in/debora-r-serra)_ as she was a student in [Trybe](https://www.betrybe.com/) :rocket:
+Contém todas as atividades desenvolvidas por mim durante minha tragetória na Trybe rocket
 
-_"Trybe is a school from the future to anyone who whants to improve their lives and build a succesfull career in tecnology, where they only pay when they get a good job."_
-
-The program includes more than 1500 hours of live and online classes, and approaches introduction to software development, front-end, back-end, computer science, software engeneering, agile methodologies and behavioral skills.
-
+"O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais."
 ## Fundaments of Web Development :heavy_check_mark:
 
 ##### Block 1: Introduction - Unix & Shell
