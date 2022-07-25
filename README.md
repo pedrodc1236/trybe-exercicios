@@ -190,9 +190,9 @@ Contém todas as atividades desenvolvidas por mim durante minha tragetória na T
 
 ##### Block 25: Deployment
 
-- [ ] 25-1: _Introduction - Deply_
-- [ ] 25-1: _Infrastructure - Deploy with Heroku_
-- [ ] 25-2: _Deploy Docker & Heroku_
+- [x] 25-1: _Introduction - Deply_
+- [x] 25-1: _Infrastructure - Deploy with Heroku_
+- [x] 25-2: _Deploy Docker & Heroku_
 - [ ] 25-3: _[Project - Stranger Things]()_
 
 ##### Block 26: TypeScript
