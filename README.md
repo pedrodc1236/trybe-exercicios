@@ -198,7 +198,7 @@ Contém todas as atividades desenvolvidas por mim durante minha tragetória na T
 ##### Block 26: TypeScript
 
 - [x] 26-1: _Introduction - TypeScript_
-- [ ] 26-1: _Introduction to TypeScript_
+- [x] 26-1: _Introduction to TypeScript_
 - [ ] 26-2: _Static Typing and Generics_
 - [ ] 26-3: _Express with TypeScript_
 - [ ] 26-4: _[Project - Trybe Smith]()_
