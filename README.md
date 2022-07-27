@@ -193,11 +193,11 @@ Contém todas as atividades desenvolvidas por mim durante minha tragetória na T
 - [x] 25-1: _Introduction - Deply_
 - [x] 25-1: _Infrastructure - Deploy with Heroku_
 - [x] 25-2: _Deploy Docker & Heroku_
-- [ ] 25-3: _[Project - Stranger Things]()_
+- [x] 25-3: _[Project - Stranger Things]()_
 
 ##### Block 26: TypeScript
 
-- [ ] 26-1: _Introduction - TypeScript_
+- [x] 26-1: _Introduction - TypeScript_
 - [ ] 26-1: _Introduction to TypeScript_
 - [ ] 26-2: _Static Typing and Generics_
 - [ ] 26-3: _Express with TypeScript_
