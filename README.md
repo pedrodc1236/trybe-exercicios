@@ -199,13 +199,13 @@ Contém todas as atividades desenvolvidas por mim durante minha tragetória na T
 
 - [x] 26-1: _Introduction - TypeScript_
 - [x] 26-1: _Introduction to TypeScript_
-- [ ] 26-2: _Static Typing and Generics_
-- [ ] 26-3: _Express with TypeScript_
-- [ ] 26-4: _[Project - Trybe Smith]()_
+- [x] 26-2: _Static Typing and Generics_
+- [x] 26-3: _Express with TypeScript_
+- [x] 26-4: _[Project - Trybe Smith]()_
 
 ##### Block 27: Object Oriented Programming and SOLID
 
-- [ ] 27-1: _Introduction to Object Orientation_
+- [x] 27-1: _Introduction to Object Orientation_
 - [ ] 27-2: _Heritage and interfaces_
 - [ ] 27-3: _Polymorphism_
 - [ ] 27-4: _SOLID - Introduction_
