@@ -206,10 +206,10 @@ Contém todas as atividades desenvolvidas por mim durante minha tragetória na T
 ##### Block 27: Object Oriented Programming and SOLID
 
 - [x] 27-1: _Introduction to Object Orientation_
-- [ ] 27-2: _Heritage and interfaces_
-- [ ] 27-3: _Polymorphism_
-- [ ] 27-4: _SOLID - Introduction_
-- [ ] 27-5: _SOLID - Part 2_
+- [x] 27-2: _Heritage and interfaces_
+- [x] 27-3: _Polymorphism_
+- [x] 27-4: _SOLID - Introduction_
+- [x] 27-5: _SOLID - Part 2_
 - [ ] 27-6: _[Project - Trybers and Dragons]()_
 
 ##### Block 28: Project - TFC - Trybe Football Club
