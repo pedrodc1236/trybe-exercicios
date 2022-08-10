@@ -3,6 +3,7 @@
 import { ReadOnlyConnector, ReadOnlyRedisConnector } from "./Connectors";
 
 const token = 'ce42033d-9133-457a-a1a1-41ac0b63a333';
+
 const conn = new ReadOnlyRedisConnector({
   host: 'redisdb',
   port: 6379});
