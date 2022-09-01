@@ -210,11 +210,11 @@ Contém todas as atividades desenvolvidas por mim durante minha tragetória na T
 - [x] 27-3: _Polymorphism_
 - [x] 27-4: _SOLID - Introduction_
 - [x] 27-5: _SOLID - Part 2_
-- [ ] 27-6: _[Project - Trybers and Dragons]()_
+- [x] 27-6: _[Project - Trybers and Dragons]()_
 
 ##### Block 28: Project - TFC - Trybe Football Club
 
-- [ ] 28-1: _[Project - TFC - Trybe Football Club]()_
+- [x] 28-1: _[Project - TFC - Trybe Football Club]()_
 
 ##### Block 29: Introduction to MongoDB
 
