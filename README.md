@@ -218,17 +218,17 @@ Contém todas as atividades desenvolvidas por mim durante minha tragetória na T
 
 ##### Block 29: Introduction to MongoDB
 
-- [ ] 29-1: _Introduction - NoSQL_
-- [ ] 29-1: _MongoDB - Introduction_
-- [ ] 29-2: _Filter Operators_
-- [ ] 29-3: _[Project - Data Flights]()_
+- [x] 29-1: _Introduction - NoSQL_
+- [x] 29-1: _MongoDB - Introduction_
+- [x] 29-2: _Filter Operators_
+- [x] 29-3: _[Project - Data Flights]()_
 
 ##### Block 30: MongoDB: Simple and Complexes Updates
 
-- [ ] 30-1: _Simple Updates_
-- [ ] 30-2: _Complexes Updates - Arrays - Part 1_
-- [ ] 30-3: _Complexes Updates - Arrays - Part 2_
-- [ ] 30-4: _[Project - Commerce]()_
+- [x] 30-1: _Simple Updates_
+- [x] 30-2: _Complexes Updates - Arrays - Part 1_
+- [x] 30-3: _Complexes Updates - Arrays - Part 2_
+- [x] 30-4: _[Project - Commerce]()_
 
 ##### Block 31: MasterClass - VPS, CI/CD
 
